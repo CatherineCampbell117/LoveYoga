@@ -1,0 +1,684 @@
+
+		/*FONTS*/
+
+		@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+		@import	url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+		/*ALL*/
+
+		* {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body { 
+        	margin: 0 auto;
+        	min-width: 100%;
+        }
+
+        section {
+        	margin: 0 auto;
+        }
+
+		/*NAVIGATION*/
+
+		header {
+			align-items: center;
+			display: flex;
+			justify-content: flex-end;
+			padding: 10px 10%;
+			background:rgba(255,255,255, 0.6);
+			position: fixed;
+			top: 0;
+  			left: 0;
+  			width: 100%;
+		}
+
+		li, a{
+			text-decoration: none;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #A9A9A9;
+		}
+
+		.nav-links {
+			list-style: none;
+		}
+
+		.nav-links li {
+			display: inline-block;
+		}
+
+		.nav-links a {
+			padding: 12px 20px;
+			transition: all 0.3s ease 0s;
+		}
+
+		.nav-links a:hover {
+			color: #F08080;
+		}
+
+		.logo {
+			margin-right: auto;
+		}
+
+		#Contact {
+			margin-left: 5px;
+			padding: 10px 20px;
+			border: 2px solid #F08080;
+			border-radius: 50px;
+			background-color: transparent;
+			color: #F08080;
+		}
+
+		#Contact:hover {
+			color: white;
+			background-color: #F08080;
+			transition: all 0.3s ease 0s;
+		}
+
+		/*BACKGROUND*/
+
+		#headermain{
+			background-image: url(Images/Classes/yoga-studio-scaled-2560w.jpeg);
+			background-color: lightgrey;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 50vh;
+		}
+	
+		/*TYPOGRAPHY - BACKGROUND*/
+
+		#mainheadline {
+			color: #F08080;
+			text-align: center;
+			padding: 25vh 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 60px;
+			text-transform: uppercase;
+		}
+
+		#featuresheading {
+			text-align: center;
+			color: #F08080;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 40px;
+			text-transform: uppercase;
+			padding: 20px 0px;
+		}
+
+		/*POPULAR FEATURES*/
+
+		.feature {
+			display: inline-block;
+		}
+
+		#features {width:1030px; display: block; margin: 0 auto;}
+
+		#features img{
+			padding: 0px 10px;
+		}
+
+		.feature h3 {
+			text-align: center;
+			color: grey;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 10px 0px;
+		}
+
+		.feature p {
+			text-align: center;
+			color: grey;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 14px;
+			padding: 0px 10px;
+		}
+
+		/*CONTACT FORM*/
+
+		#Contact-Us {
+			color: #F08080;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 40px;
+			text-transform: uppercase;
+			padding: 20px 0px;
+		}
+		#contactformdiv {
+			margin-top: 10vh;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			width: 60vw;
+			height: 460px;
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+		}
+
+		#contactfrom {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+
+		#contactform input[type=text] {
+			border: none;
+			border-radius: 50px;
+			padding: 10px 20px;
+			margin: 10px 5px;
+			width: 180px;
+			background-color: #fcc8c4;
+			outline: none;
+		}
+
+
+		#contactform input[type=email] {
+			border: none;
+			border-radius: 50px;
+			padding: 10px 20px;
+			margin: 10px 0px;
+			width: 370px;
+			background-color: #fcc8c4;
+			outline: none;
+		}
+
+		select {
+			border-radius: 50px;
+  			width: 370px;
+  			padding: 10px 15px;
+  			border: none;
+  			background-color: #fcc8c4;
+  			margin: 10px 0px;
+  			outline: none;
+		}
+
+		select:required:invalid {
+        	color: #666;
+      	}
+      	option[value=""][disabled] {
+        	display: none;
+      	}
+      	option {
+        	color: #000;
+      	}
+
+		#contactform textarea{
+			padding: 10px 20px;
+			margin: 10px 0px;
+			resize: none;
+			width: 370px;
+			height: 100px;
+			border: none;
+			border-radius: 20px;
+			background-color: #fcc8c4;
+			outline: none;
+		}
+
+		input[type=submit] {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			color: #F08080;
+			padding: 10px 20px;
+			border: 2px solid #F08080;
+			border-radius: 50px;
+			background-color: transparent;
+  			margin-top: 10px;
+  			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #F08080;
+			color: white;
+		}
+
+		/*CONTACT & LOCATION INFO*/
+
+		#hours {
+			padding: 20px 10px;
+		}
+
+		#openinghours {
+			list-style: none;
+		}
+
+		#openinghours li {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			color: grey;
+			text-transform: lowercase;
+		}
+
+		#openinghours h4 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 20px;
+			color: grey;
+			text-transform: uppercase;
+		}
+
+		.weekday {
+			text-decoration: none;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: grey;
+		}
+
+
+		#location h4{
+			text-decoration: none;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: grey;	
+		}
+
+		#location {
+			padding: 20px 10px;
+			text-decoration: none;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: grey;	
+		}
+
+		#location a {
+			color: #F08080;
+		}
+
+		#info {
+			display: flex;
+			justify-content: center;
+		}
+
+		#locationimg {
+			padding: 5px 10px;
+		}
+
+		/*ALL LINKED PAGES*/
+
+		.pageheadline {
+			color: #F08080;
+			text-align: center;
+			padding: 20vh 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 60px;
+			text-transform: uppercase;
+		}
+
+		/*ABOUT*/
+
+		#headerabout {
+			background-image: url(Images/Classes/yoga-class-standing1600w.jpg);
+			background-color: lightgrey;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 40vh;
+			align-items: center;
+		}
+
+		.aboutheading {
+			color: #F08080;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 40px;
+			text-transform: uppercase;
+			padding: 30px 0px;
+			text-align: center;
+		}
+
+		#about {
+            display: flex;
+            padding: 0px 200px;
+        }
+        #about p:first-child{
+        	padding-top:0;
+        }
+        #about p {
+        	padding: 10px 0;
+        	font-size: 16px;
+        }
+
+        #about a {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #F08080;
+            text-transform: lowercase;
+            font-size: 16px;
+        }
+
+        #video {
+            display: flex;
+            justify-content: center;
+        }
+
+        #about, .Etiquette p{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .Etiquette p{
+        	padding-top: 20px;
+        }
+
+        #studioetiquette {
+            padding-bottom: 50px;
+        }
+
+        .Etiquette p {
+            padding: 0 200px;
+            
+        }
+
+        .Rule {
+            color: grey;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 16px;   
+            margin: 7px 0;
+            text-transform: uppercase;
+        }
+
+        #floatimg {
+            float: right;
+            padding-left: 20px;
+        }
+
+		/*CLASS TIMETABLE*/
+
+		#headertimetable {
+			background-image: url(Images/Classes/yoga-class-downwarddog1840w.jpg);
+			background-color: lightgrey;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 40vh;
+			align-items: center;
+		}
+			
+		#tabletitle {
+			padding: 20px 20px;
+			text-align: center;
+			color: #F08080;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 40px;
+			text-transform: uppercase;
+		}
+
+		#centre {
+			padding: 30px 30px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		table, th, td {
+			border: 1px solid white;
+			border-collapse: collapse;
+			background-color: lightgrey;
+		}
+
+		td {
+			padding: 10px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			font-size: 12px;
+		}
+
+		th {
+			padding: 10px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		.Easy {
+			color: green;
+		}
+
+		.Medium {
+			color: orange;
+		}
+
+		.Hard {
+			color: red;
+		}
+
+		.Advanced {
+			color: blue;
+		}
+
+		.Couples {
+			color: magenta;
+		}
+
+		#PDF {
+			margin: 20px auto;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			font-size: 14px;
+		}
+
+		#PDF p {
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+
+		#download {
+			padding: 10px 20px;
+			border: 2px solid #F08080;
+			border-radius: 50px;
+			background-color: transparent;
+			color: #F08080;
+		}
+
+		#download:hover {
+
+			color: white;
+			background-color: #F08080;
+			transition: all 0.3s ease 0s;
+		}
+
+		/*TIMETABLE - FEEDBACK FORM*/
+
+		#fbformheading {
+			color: #F08080;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 40px;
+			text-transform: uppercase;
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		#fbformdiv {
+			margin: 10vh auto;
+			text-align: center;
+			width: 60vw;
+			height: 530px;
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+		}
+
+		#fbform {
+			padding: 0px 100px;
+		}
+
+		#fbform h4 {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			padding: 10px 0px;
+			text-align: center;
+		}
+
+		#fbform p {
+			color: #F08080;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			padding: 10px 0px;
+		}
+
+		#fbform label {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 14px;
+			padding-right: 5px;
+		}
+
+		input[type=radio]:checked {
+  			border: 5px solid #F08080;
+  			color: #F08080;
+		}
+
+		#fbform textarea {
+			padding: 10px 10px;
+			resize: none;
+			width: 370px;
+			height: 100px;
+			border: none;
+			border-radius: 10px;
+			background-color: lightgray;
+			outline: none;
+		}
+
+		/*LEVELS*/
+
+		#headerlevels {
+			background-image: url(Images/Classes/yoga-class-blocks2500w.jpg);
+			background-color: lightgrey;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 40vh;
+			align-items: center;
+		}
+
+		.levelheading {
+			color: grey;
+			text-align: left;
+			padding: 10px 0px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+
+		.levelheading span {
+			text-transform: lowercase;
+		}
+
+		#level1 {
+			color: green;
+		}
+
+		#level2 {
+			color: orange;
+		}
+
+		#level3 {
+			color: red;
+		}
+
+		#level4 {
+			color: blue;
+		}
+
+		.child {
+			padding: 80px 20px;
+		}
+		
+		.parent {
+            display: flex;
+            padding: 10px 60px;
+            
+        }
+        .parent p {
+            font-size: 20px;
+        }
+
+		.leveldesc {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 16px;	
+		}
+
+		
+		/*FOOTER*/
+
+		footer {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 500;
+			font-size: 1rem;
+			padding: 10px 0px;
+			background-color: gray;
+			text-align: center;
+		}
+
+		footer p a {
+			text-transform: lowercase;
+			color: black;
+		}
+
+		footer p a:hover {
+			color: #fcc8c4;
+		}
+
+		/*@media only screen and (min-width:375px) and (max-width:500px) {
+			.wrapper {width: 375px}
+			#headermain {height: 30vh; background-image: url(Images/Classes/yoga-studio-scaled-640w.jpg); width: 90%; background-size: cover;}
+			#mainheadline {
+			color: #F08080;
+			text-align: center;
+			padding: 15vh 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 60px;
+			text-transform: uppercase;
+		}
+
+
+		} */
+
+
+		/*@media only screen and (min-width:501px) and (max-width:899px) {
+			.wrapper {width: 500px}
+			#headermain {height: 40vh; background-image: url(Images/Classes/yoga-studio-scaled-1280w.jpg); width: 100%}
+			#mainheadline {
+			color: #F08080;
+			text-align: center;
+			padding: 25vh 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-size: 60px;
+			text-transform: uppercase;
+		}
+
+
+		}*/
+
+
+		
